@@ -1,19 +1,20 @@
 "use strict";
 
+// Swiper
 var swiper = new Swiper('.swiper', {
-  // 分頁   
+  // Optional parameters
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  // If we need pagination
   pagination: {
     el: '.swiper-pagination'
   },
-  // 左右箭頭    
+  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
-  },
-  // 滾動條
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true
   }
 });
 //# sourceMappingURL=all.js.map
