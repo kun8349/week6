@@ -18994,6 +18994,20 @@ fieldset:disabled .btn {
   }
 }
 
+.banner {
+  background-image: url(../images/bg_home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 680px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(../images/bg_home_mobile.jpg);
+  }
+}
+
 .bg-img-1 {
   background-image: url(../images/info01.jpg);
   background-position: center;
@@ -19083,7 +19097,7 @@ fieldset:disabled .btn {
   padding: 80px 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .banner-footer {
     height: auto;
   }
@@ -19211,7 +19225,7 @@ fieldset:disabled .btn {
   position: unset;
   width: 24px;
   height: 24px;
-  bottom: 0;
+  margin-top: 0px;
   color: #62DB54;
 }
 
@@ -19267,13 +19281,6 @@ fieldset:disabled .btn {
   border-bottom: 2px solid #09ACF5;
   width: 100%;
   left: 100%;
-}
-
-.banner {
-  background-image: url(../images/bg_home.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 680px;
 }
 
 .before-bottom-112 {

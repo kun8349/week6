@@ -17,4 +17,12 @@ var swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 });
+var swiper1 = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination1",
+    clickable: true
+  }
+});
 //# sourceMappingURL=all.js.map
