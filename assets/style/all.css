@@ -19008,6 +19008,16 @@ fieldset:disabled .btn {
   }
 }
 
+.btn-outline-swiper {
+  border: 1px solid white;
+}
+
+.btn-outline-swiper:hover {
+  color: #62DB54;
+  border: 1px solid #62DB54;
+  background-color: #2D2D2D;
+}
+
 .bg-img-1 {
   background-image: url(../images/info01.jpg);
   background-position: center;
@@ -19263,21 +19273,12 @@ fieldset:disabled .btn {
   }
 }
 
-.btn-outline-swiper {
-  border: 1px solid white;
-}
-
-.btn-outline-swiper:hover {
-  color: #62DB54;
-  border: 1px solid #62DB54;
-  background-color: #2D2D2D;
-}
-
 .font-fmaily {
   font-family: 'Azeret Mono','Noto Sans TC';
 }
 
-.outline {
+.double-line::before {
+  content: '';
   position: absolute;
   width: 50%;
   border-bottom: 2px solid #62DB54;
@@ -19285,56 +19286,13 @@ fieldset:disabled .btn {
   left: 0;
 }
 
-.outline::after {
+.double-line::after {
   content: '';
   position: absolute;
+  width: 50%;
   border-bottom: 2px solid #09ACF5;
-  width: 100%;
-  left: 100%;
-}
-
-.before-bottom-112 {
-  position: relative;
-  max-width: 112px;
-  font-size: 28px;
-  margin: 0 auto;
-}
-
-.before-bottom-112::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  border-bottom: 3px solid #62DB54;
-  top: 50px;
-  left: 31px;
-}
-
-.before-bottom-500 {
-  position: relative;
-  max-width: 446px;
-  font-size: 28px;
-  margin: 0 auto;
-}
-
-.before-bottom-500::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  border-bottom: 3px solid #62DB54;
-  top: 100px;
-  left: 198px;
-}
-
-.position-img-index {
-  position: absolute;
-  top: -50px;
-  right: 32px;
-}
-
-.rounded-left-bottom-0 {
-  border-bottom-right-radius: 24px;
-  border-top-right-radius: 24px;
-  border-top-left-radius: 24px;
+  bottom: 0;
+  right: 0;
 }
 
 .img-100 {
@@ -19365,10 +19323,6 @@ fieldset:disabled .btn {
   margin-bottom: 37px;
 }
 
-.b-b-50 {
-  width: 50px;
-}
-
 .left-70 {
   left: 70px;
 }
@@ -19389,12 +19343,6 @@ fieldset:disabled .btn {
 .px-109 {
   padding-left: 109px;
   padding-right: 109px;
-}
-
-.cotainer-1500 {
-  width: 1500px;
-  padding: 0 12px;
-  margin: 0 auto;
 }
 
 .gradient-x {
