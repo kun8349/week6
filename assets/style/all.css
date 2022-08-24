@@ -263,7 +263,7 @@ kbd {
   font-size: 0.875em;
   color: #fff;
   background-color: #212529;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 kbd kbd {
@@ -3358,7 +3358,7 @@ progress {
   min-height: calc(1.5em + (0.5rem + 2px));
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 .form-control-sm::file-selector-button {
@@ -3916,7 +3916,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 .input-group-lg > .form-select,
@@ -5186,7 +5186,7 @@ fieldset:disabled .btn {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 .fade {
@@ -6687,13 +6687,13 @@ fieldset:disabled .btn {
 }
 
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .badge {
@@ -11369,7 +11369,7 @@ fieldset:disabled .btn {
 }
 
 .rounded-1 {
-  border-radius: 0.2rem !important;
+  border-radius: 0.5rem !important;
 }
 
 .rounded-2 {
@@ -19263,6 +19263,16 @@ fieldset:disabled .btn {
   }
 }
 
+.btn-outline-swiper {
+  border: 1px solid white;
+}
+
+.btn-outline-swiper:hover {
+  color: #62DB54;
+  border: 1px solid #62DB54;
+  background-color: #2D2D2D;
+}
+
 .font-fmaily {
   font-family: 'Azeret Mono','Noto Sans TC';
 }
@@ -19372,6 +19382,15 @@ fieldset:disabled .btn {
   width: 352px;
 }
 
+.pt-42 {
+  padding-top: 42px;
+}
+
+.px-109 {
+  padding-left: 109px;
+  padding-right: 109px;
+}
+
 .cotainer-1500 {
   width: 1500px;
   padding: 0 12px;
@@ -19381,6 +19400,11 @@ fieldset:disabled .btn {
 .gradient-x {
   background-image: -o-linear-gradient(346deg, #62DB54, #09ACF5);
   background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+}
+
+.gradient-x:hover {
+  -webkit-box-shadow: inset 0 0 6px 4px white;
+          box-shadow: inset 0 0 6px 4px white;
 }
 
 .double-color-y {
@@ -19485,6 +19509,23 @@ fieldset:disabled .btn {
 .hover-opacity:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.btn-hover-title:hover {
+  color: #62DB54;
+  border: 1px solid #62DB54;
+  background-color: #1C1C1C;
+}
+
+.btn-hover-content {
+  border: 1px solid white;
+  display: block;
+}
+
+.btn-hover-content:hover {
+  color: #62DB54;
+  border: 1px solid #62DB54;
+  background-color: #2D2D2D;
 }
 
 /*# sourceMappingURL=all.css.map */

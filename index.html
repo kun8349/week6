@@ -23,10 +23,10 @@
           <h1><img src="assets/images/logo.svg" alt="" class="logo-img"></h1>
         </a>
         <ul class="list-unstyled d-flex align-items-center mb-0 fs-6">
-          <li><a href="" class="me-12">首頁</a></li>
-          <li><a href="" class="me-12">課程介紹</a></li>
+          <li><a href="index.html" class="me-12">首頁</a></li>
+          <li><a href="all-course.html" class="me-12">課程介紹</a></li>
           <li>
-            <a href="" class="material-symbols-outlined d-flex align-items-center fs-6 lh-base">
+            <a href="" class="material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               <span class="fs-4 me-1">account_circle</span>
               <span class="fs-6 lh-base">登入</span> 
             </a>
@@ -152,35 +152,35 @@
   <div class="swiper1 mySwiper pb-20 container-fluid">
     <div class="swiper-wrapper d-flex">
       <div class="swiper-slide">
-        <button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+        <button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         JavaScript
         </button>
       </div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         HTML/CSS
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         SQL
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         Java
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         SQL
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         Bash/Shell
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         Python
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         Python
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         PHP
       </button></div>
-      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-light fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
+      <div class="swiper-slide"><button type="button" class="btn btn-primary btn-outline-swiper fs-7 lh-base fw-bold px-8 py-6 me-4 rounded-3">
         C++
       </button></div>
     </div>
@@ -258,7 +258,9 @@
       </li>
     </ul>
     <div class="text-center mt-12">
-      <button type="button" class="btn gradient-x px-8 py-2 text-white fw-normal border-0">所有課程列表</button>
+      <a href="all-course.html">
+        <button type="button" class="btn gradient-x px-8 py-2 text-white fw-normal border-0">所有課程列表</button>
+      </a>
     </div>
   </div>
 </div>
@@ -476,7 +478,25 @@
         </div>
       </div>
     </footer>
-
+    <!--modal-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <div></div>
+            <h5 class="modal-title" id="staticBackdropLabel">登入</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/vendors.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
