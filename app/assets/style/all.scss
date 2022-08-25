@@ -3,4 +3,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+@import './layout/index.scss';
+@import 'base.scss';
+@import 'space.scss';
+@import 'color.scss';
+@import 'hover.scss';
+@import 'all-course.scss';
+@import 'media.scss';
