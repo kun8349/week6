@@ -19008,6 +19008,12 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 768px) {
+  .banner h2, .banner .h2 {
+    font-size: 48px;
+  }
+}
+
 #style-3::-webkit-scrollbar-track {
   background-color: black;
 }
@@ -19028,6 +19034,12 @@ fieldset:disabled .btn {
   color: #62DB54;
   border: 1px solid #62DB54;
   background-color: #2D2D2D;
+}
+
+@media (max-width: 991px) {
+  .text-center {
+    text-align: center;
+  }
 }
 
 .bg-img-1 {
@@ -19312,6 +19324,11 @@ fieldset:disabled .btn {
   white-space: nowrap;
 }
 
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
 .img-100 {
   width: 100px;
 }
@@ -19497,18 +19514,9 @@ fieldset:disabled .btn {
   background-color: #2D2D2D;
 }
 
-@media (min-width: 768px) {
-  .fs-lg-8 {
-    font-size: 48px;
-  }
-  .text-lg-stare {
+@media (min-width: 991px) {
+  .text-center {
     text-align: start;
-  }
-}
-
-@media (min-width: 992px) {
-  .fs-lg-8 {
-    font-size: 48px;
   }
 }
 
