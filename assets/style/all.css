@@ -19002,10 +19002,22 @@ fieldset:disabled .btn {
   height: 680px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .banner {
     background-image: url(../images/bg_home_mobile.jpg);
   }
+}
+
+#style-3::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 1px;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: gray;
 }
 
 .btn-outline-swiper {
@@ -19295,6 +19307,11 @@ fieldset:disabled .btn {
   right: 0;
 }
 
+.overflow-x {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .img-100 {
   width: 100px;
 }
@@ -19343,6 +19360,10 @@ fieldset:disabled .btn {
 .px-109 {
   padding-left: 109px;
   padding-right: 109px;
+}
+
+.ml-30 {
+  margin-left: 120px;
 }
 
 .gradient-x {
@@ -19474,6 +19495,21 @@ fieldset:disabled .btn {
   color: #62DB54;
   border: 1px solid #62DB54;
   background-color: #2D2D2D;
+}
+
+@media (min-width: 768px) {
+  .fs-lg-8 {
+    font-size: 48px;
+  }
+  .text-lg-stare {
+    text-align: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-8 {
+    font-size: 48px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
