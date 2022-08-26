@@ -16,22 +16,31 @@
   </head>
 
   <body>
-    <nav class="bg-primary position-relative">
+    <nav class="navbar navbar-expand-lg navbar-white bg-primary position-relative">
       <div class="double-line"></div>
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="" class="py-5">
-          <h1><img src="assets/images/logo.svg" alt="" class="logo-img"></h1>
-        </a>
-        <ul class="list-unstyled d-flex align-items-center mb-0 fs-6">
-          <li><a href="index.html" class="me-12">首頁</a></li>
-          <li><a href="all-course.html" class="me-12">課程介紹</a></li>
-          <li>
-            <a href="" class="material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <span class="fs-4 me-1">account_circle</span>
-              <span class="fs-6 lh-base">登入</span> 
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <h1><a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="" class="logo-img"></a></h1>
+        <button class="navbar-toggler link-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-success">
+            menu
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 lh-base align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active me-12" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item me-12">
+              <a class="nav-link" href="all-course.html">課程介紹</a>
+            </li>
+            <li class="nav-item me-12">
+              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span class="fs-4 me-1">account_circle</span>
+                <span class="fs-6 lh-base">登入</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Modal -->

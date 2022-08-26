@@ -16,22 +16,31 @@
   </head>
 
   <body>
-    <nav class="bg-primary position-relative">
+    <nav class="navbar navbar-expand-lg navbar-white bg-primary position-relative">
       <div class="double-line"></div>
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="" class="py-5">
-          <h1><img src="assets/images/logo.svg" alt="" class="logo-img"></h1>
-        </a>
-        <ul class="list-unstyled d-flex align-items-center mb-0 fs-6">
-          <li><a href="index.html" class="me-12">首頁</a></li>
-          <li><a href="all-course.html" class="me-12">課程介紹</a></li>
-          <li>
-            <a href="" class="material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <span class="fs-4 me-1">account_circle</span>
-              <span class="fs-6 lh-base">登入</span> 
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <h1><a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="" class="logo-img"></a></h1>
+        <button class="navbar-toggler link-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-success">
+            menu
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 lh-base align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active me-12" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item me-12">
+              <a class="nav-link" href="all-course.html">課程介紹</a>
+            </li>
+            <li class="nav-item me-12">
+              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span class="fs-4 me-1">account_circle</span>
+                <span class="fs-6 lh-base">登入</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Modal -->
@@ -73,17 +82,17 @@
   <div class="container">
     <div class="banner">
       <div class="d-flex flex-column justify-content-center align-items-center h-100">
-        <div class="text-white lh-base text-center border bg-primary px-21 py-13 position-relative">
+        <div class="text-white lh-base text-center border bg-primary px-22 py-13 p-md-banner position-relative">
           <div class="square position-absolute top-0 start-0 translate-middle"></div>
           <div class="square position-absolute top-0 start-100 translate-middle"></div>
           <div class="square position-absolute top-100 start-0 translate-middle"></div>
           <div class="square position-absolute top-100 start-100 translate-middle"></div>
-          <h2 class="fs-3 fs-lg-8 mb-6 fw-bold">
-            <span class="double-color-y">全台最豐富的城市家教</span>
+          <h2 class="fs-8 fs-md-24 mb-6 fw-bold">
+            <span class="double-color-y fs-md-4">全台最豐富的城市家教</span>
             <br>
             在實踐中化理想為現實  
           </h2>
-          <h3 class="fs-7 fw-normal mb-0 lh-base">全台最專業師資｜到府程式家教｜客製化課程</h3>
+          <h3 class="fs-7 fs-md-14 fw-normal mb-0 lh-base">全台最專業師資｜到府程式家教｜客製化課程</h3>
         </div>
       </div>
     </div>
@@ -92,14 +101,14 @@
 <div class="bg-primary">
   <div class="container">
     <div class="row text-white text-center align-items-center fw-bold py-20">
-      <div class="col-12 col-md-6 col-lg-3 fs-4 fs-lg-3 text-start lh-base">
-        <h2 class="text-center text-white mb-0 title">
+      <div class="col-lg-3 col-md-6 col-12 fs-4 fs-lg-3 text-start lh-base">
+        <h2 class="text-start title-left-center text-white mb-0 title-left fw-bold">
           手把手帶你<br>親自到家教到會
           <span></span>
         </h2>
       </div>
-      <div class="col-12 col-md-6 col-lg-3">
-          <ul class="hover-radius ps-0 mb-0 list-unstyled">
+      <div class="col-lg-3 col-md-6 col-12">
+          <ul class="hover-radius ps-0 mb-0 mb-lg-6 list-unstyled">
             <li>
               <h3 class="material-symbols-outlined fs-1 pb-9 mb-0 pt-12 hover-color">code</h3>
               <h2 class="fs-7 fw-bold pb-4 mb-0 lh-base">超過 100 種專業課程</h2>
@@ -107,7 +116,7 @@
             </li> <!--location_on-->
           </ul>
       </div>
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-lg-3 col-md-6 col-12">
         <ul class="hover-radius ps-0 mb-0">
           <li class="list-unstyled">
             <h3 class="material-symbols-outlined fs-1 pb-9 mb-0 pt-12 hover-color">rocket_launch</h3>
@@ -116,7 +125,7 @@
           </li>
         </ul>
       </div> 
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-lg-3 col-md-6 col-12">
         <ul class="hover-radius ps-0 mb-0">
           <li class="list-unstyled">
             <h3 class="material-symbols-outlined fs-1 pb-9 mb-0 pt-12 hover-color">location_on</h3>
@@ -129,13 +138,13 @@
   </div>
 </div>
 <div class="bg-secondary">
-  <div class="container-xxl py-20">
-    <h2 class="text-center text-lg-stare text-white pb-22 mb-0 title">
+  <div class="container py-20">
+    <h2 class="text-center text-white pb-22 mb-0 title">
       預期上課流程
       <span class="mx-auto"></span>
     </h2>
     <ul class="row justify-content-between align-items-center px-0">
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div class="border border-1 border-white rounded-3 py-12 px-12 position-relative">
           <span class="text-success fs-8 fw-bold position-absolute top-0 left-70 translate-middle bg-secondary px-1 font-fmaily">01</span>
           <div class="hover-opacity">
@@ -146,7 +155,7 @@
           </div> 
         </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div class="border border-1 border-white rounded-3 py-12 px-12 position-relative">
           <span class="text-success fs-8 fw-bold position-absolute top-0 left-70 translate-middle bg-secondary px-1 font-fmaily">02</span>
           <div class="hover-opacity">
@@ -156,7 +165,7 @@
             </p>
           </div> 
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div class="border border-1 border-white rounded-3 py-12 px-12 position-relative">
           <span class="text-success fs-8 fw-bold position-absolute top-0 left-70 translate-middle bg-secondary px-1 font-fmaily">03</span>
           <div class="hover-opacity">
@@ -167,7 +176,7 @@
           </div> 
         </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div class="border border-1 border-white rounded-3 py-12 px-12 position-relative">
           <span class="text-success fs-8 fw-bold position-absolute top-0 left-70 translate-middle bg-secondary px-1 font-fmaily">04</span>
           <div class="hover-opacity">
@@ -253,7 +262,7 @@
       <span class="mx-auto"></span>
     </h2>
     <ul class="row lh-base fw-normal px-0 mb-0 d-flex justify-content-between align-items-center">
-      <li class="col-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div href="#" class="d-flex flex-column align-items-center pt-6 pb-4 px-6 bg-primary rounded-3 text-white hover-outline">
           <img src="assets/images/teacher01.jpg" alt="" class="img-100 rounded-circle">
           <p class="fs-6 mt-2 mb-6">Belinda</p>
@@ -269,7 +278,7 @@
           </div> 
         </div>
       </li>
-      <li class="col-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div href="#" class="d-flex flex-column align-items-center pt-6 pb-4 px-6 bg-primary rounded-3 text-white hover-outline">
           <img src="assets/images/teacher06.jpg" alt="" class="img-100 rounded-circle">
           <p class="fs-6 mt-2 mb-6">Guava</p>
@@ -285,7 +294,7 @@
           </div> 
         </div> 
       </li>    
-      <li class="col-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div href="#" class="d-flex flex-column align-items-center pt-6 pb-4 px-6 bg-primary rounded-3 text-white hover-outline">
           <img src="assets/images/teacher03.jpg" alt="" class="img-100 rounded-circle">
           <p class="fs-6 mt-2 mb-6">Joe</p>
@@ -301,7 +310,7 @@
           </div> 
         </div> 
       </li>
-      <li class="col-3">
+      <li class="col-lg-3 col-md-6 col-12">
         <div href="#" class="d-flex flex-column align-items-center pt-6 pb-4 px-6 bg-primary rounded-3 text-white hover-outline">
           <img src="assets/images/teacher04.jpg" alt="" class="img-100 rounded-circle">
           <p class="fs-6 mt-2 mb-6">Lina</p>
@@ -326,7 +335,7 @@
   </div>
 </div>
 <ul class="row list-unstyled m-0">
-  <li class="col-3 px-0">
+  <li class="col-lg-3 col-md-6 col-12 px-0">
     <div class="bg-img-1 lh-base d-flex flex-column align-items-start justify-content-center ps-12 icon-hover">
       <span class="material-symbols-outlined fs-3 text-start g-filter">
         forum 
@@ -336,7 +345,7 @@
       <p class="text-white hover-p">除了可以瘋狂提問之外<br>還有機會一起完成專案</p>   
     </div>  
   </li>
-  <li class="col-3 px-0">
+  <li class="col-lg-3 col-md-6 col-12 px-0">
     <div class="bg-img-2 lh-base d-flex flex-column align-items-start justify-content-center ps-12 icon-hover">
       <span class="material-symbols-outlined fs-3 text-start g-filter">
         tips_and_updates
@@ -346,7 +355,7 @@
       <p class="text-white hover-p">進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>   
     </div>  
   </li>
-  <li class="col-3 px-0">
+  <li class="col-lg-3 col-md-6 col-12 px-0">
     <div class="bg-img-3 lh-base d-flex flex-column align-items-start justify-content-center ps-12 icon-hover">
       <span class="material-symbols-outlined fs-3 text-start g-filter">
         thumb_up
@@ -356,7 +365,7 @@
       <p class="text-white hover-p">針對學員狀況調整內容與步調<br>學習精準最有效</p>   
     </div>  
   </li>
-  <li class="col-3 px-0">
+  <li class="col-lg-3 col-md-6 col-12 px-0">
     <div class="bg-img-4 lh-base d-flex flex-column align-items-start justify-content-center ps-12 icon-hover">
       <span class="material-symbols-outlined fs-3 text-start g-filter">
         supervisor_account
@@ -374,13 +383,13 @@
       <span class="mx-auto"></span>
     </h2>
     <ul class="row list-unstyled mb-0">
-      <li class="col-4">
+      <li class="col-lg-4 col-md-6 col-12">
         <div class="p-8 card bg-secondary border-0">
           <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
           <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
           <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
           <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
-          <img src="assets/images/article01.jpg" alt="" class="img-352 mb-4">
+          <img src="assets/images/article01.jpg" alt="" class="w-100 mb-4">
           <h3 class="mb-4 fs-7 fw-bold">2022 前端開發者學習地圖</h3>
           <p class="mb-4 fs-6">
             轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
@@ -388,13 +397,13 @@
           <p class="text-end fs-7 font-fmaily"><a class="active-shadow stretched-link text-success" href="#">MORE</a></p>
         </div>
       </li>
-      <li class="col-4">
+      <li class="col-lg-4 col-md-6 col-12">
         <div class="p-8 card bg-secondary border-0">
           <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
           <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
           <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
           <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
-          <img src="assets/images/article02.jpg" alt="" class="img-352 mb-4">
+          <img src="assets/images/article02.jpg" alt="" class="w-100 mb-4">
           <h3 class="mb-4 fs-7 fw-bold">軟體工程師有哪些類別</h3>
           <p class="mb-4 fs-6">
             軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
@@ -402,13 +411,13 @@
           <p class="text-end fs-7 font-fmaily"><a class="active-shadow stretched-link text-success" href="#">MORE</a></p>
         </div>
       </li>
-      <li class="col-4">
+      <li class="col-lg-4 col-md-6 col-12">
         <div class="p-8 card bg-secondary border-0">
           <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
           <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
           <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
           <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
-          <img src="assets/images/article03.jpg" alt="" class="img-352 mb-4">
+          <img src="assets/images/article03.jpg" alt="" class="w-100 mb-4">
           <h3 class="mb-4 fs-7 fw-bold">免費 25 小時前端教學資源</h3>
           <p class="mb-4 fs-6">
             這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程

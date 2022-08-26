@@ -19002,16 +19002,8 @@ fieldset:disabled .btn {
   height: 680px;
 }
 
-@media (max-width: 991px) {
-  .banner {
-    background-image: url(../images/bg_home_mobile.jpg);
-  }
-}
-
-@media (min-width: 768px) {
-  .banner h2, .banner .h2 {
-    font-size: 48px;
-  }
+.fz-14 {
+  font-size: 14px;
 }
 
 #style-3::-webkit-scrollbar-track {
@@ -19141,6 +19133,14 @@ fieldset:disabled .btn {
   margin-bottom: 32px;
   width: 50px;
   border-bottom: 3px solid;
+}
+
+.title-left span:last-child {
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 1rem;
+  background-color: #62DB54;
 }
 
 .title span:last-child {
@@ -19366,10 +19366,6 @@ fieldset:disabled .btn {
   text-align: center;
 }
 
-.img-352 {
-  width: 352px;
-}
-
 .pt-42 {
   padding-top: 42px;
 }
@@ -19514,9 +19510,51 @@ fieldset:disabled .btn {
   background-color: #2D2D2D;
 }
 
-@media (min-width: 991px) {
-  .text-center {
-    text-align: start;
+@media (max-width: 991px) {
+  .banner {
+    background-image: url(../images/bg_home_mobile.jpg);
+  }
+  .title-left-center {
+    text-align: center !important;
+  }
+  .title-left span:last-child {
+    margin-left: 42.5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fs-md-24 {
+    font-size: 24px !important;
+  }
+  .fs-md-14 {
+    font-size: 14px !important;
+  }
+  .p-md-banner {
+    padding: 32px 25px !important;
+  }
+  .fs-md-8 {
+    font-size: 48px !important;
+  }
+  .fs-md-7 {
+    font-size: 18px !important;
+  }
+  .title-left span:last-child {
+    margin-left: 45% !important;
+    margin-bottom: 40px !important;
+  }
+  .hover-radius {
+    margin-bottom: 24px !important;
+    background-color: #202020 !important;
+    opacity: 1  !important;
+  }
+  .hover-radius h3, .hover-radius .h3 {
+    font-size: 40px !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+    background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+    background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
   }
 }
 
