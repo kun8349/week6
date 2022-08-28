@@ -1,0 +1,68 @@
+.logo-img{
+    height: 42px;
+    text-align: center;
+}
+.double-line{
+    &::before{
+        content:'';
+        position: absolute;
+        width: 50%;
+        border-bottom: 2px solid #62DB54;
+        bottom: 0;
+        left: 0;
+        
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        width: 50%;
+        border-bottom: 2px solid #09ACF5;
+        bottom: 0;
+        right: 0;
+    }
+}
+.btn-close{
+    position: absolute;
+    right: 29px;
+    top: 30px;
+    color: white;
+}
+.modal-my{
+    margin-right: 155px;
+    margin-left: 150px;
+}
+.modal-body-width{
+    max-width: 100%;
+    padding: 0;
+    
+}
+.container-modal{
+    max-width: 662px;
+    margin: 0 auto;
+}
+.modal-word{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        right: 0;
+        background-color: white;
+        height: 1px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        left: 0;
+        background-color: white;
+        height: 1px;
+    }
+}
+.logo-icon{
+    width: 24px;
+    height: 24px;
+    text-align: left;
+}

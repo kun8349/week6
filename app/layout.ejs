@@ -34,7 +34,7 @@
               <a class="nav-link" href="all-course.html">課程介紹</a>
             </li>
             <li class="nav-item me-12">
-              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <span class="fs-4 me-1">account_circle</span>
                 <span class="fs-6 lh-base">登入</span> 
               </a>
@@ -44,65 +44,88 @@
       </div>
     </nav>
     <!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body container-fluid position-relative pt-4 pb-6">
-        <button type="button" class="btn-close h7 position-absolute" data-bs-dismiss="modal"
-          aria-label="Close"></button>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <p class="modal-title h3 text-center" id="exampleModalLabel">登入</p>
-            <form>
-              <div class="mb-4">
-                <label for="email" class="form-label">信箱</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="請輸入信箱">
-              </div>
-              <div class="mb-4">
-                <label for="password" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
-              </div>
-              <button href="sign-up.html" type="submit" class="btn btn-gradient w-100 mb-6 border-0">登入</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable container-modal">
+        <div class="modal-content bg-primary text-white rounded-0 border border-1 border-white">
+          <button type="button" class="btn-close pr-29" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 p-0 justify-content-center">
+            <h4 class="modal-title fw-bold fs-4 pt-6 mb-8" id="loginModalLabel">登入</h4>
+          </div>
+          <div class="modal-body modal-body-width modal-my mb-12">
+            <form class="d-flex flex-column">
+              <label for="email" class="form-label text-c-gray">信箱</label>
+              <input type="email" class="form-control rounded-1 bg-secondary border border-1 border-white text-white mb-4 mb-lg-6" id="email" placeholder="請輸入信箱">
+              <label for="password-login" class="form-label text-c-gray">密碼</label>
+              <input type="password" class="form-control rounded-1 bg-secondary border border-1 border-white text-white mb-4 mb-lg-6" id="password-login" placeholder="請輸入密碼">
+              <botton type="submit" class="btn border-0 text-white d-block px-12 py-2 fs-7 lh-base gradient-x rounded-1 mb-12">登入</botton>
             </form>
-            <p class="text-center line-deco mb-3">其他登入方式</p>
-            <a href="#" class="btn btn-outline-white w-100 mb-4 position-relative"><img
-                src="assets/images/icon_fb.svg" alt="icon" class="login-icon">Facebook 登入</a>
-            <a href="#" class="btn btn-outline-white w-100 position-relative"><img src="assets/images/icon_google.svg"
-                alt="icon" class="login-icon">Google 登入</a>
-
+              <p class="modal-word text-center fs-6 lh-base mb-4">其他登入方式</p>
+              <a href="#" class="btn btn-outline-white mb-4 position-relative d-block d-flex align-items-center justify-content-between">
+                <img
+                src="assets/images/fb_icon_325x325.png" alt="icon" class="logo-icon">
+                <span>Facebook 登入</span>
+                <span></span>
+              </a>
+              <a href="#" class="btn btn-outline-white position-relative d-block d-block d-flex align-items-center justify-content-between">
+                <img src="assets/images/icon_google.svg"
+                alt="icon" class="logo-icon">
+                <span>Google 登入</span>
+                <span></span>
+              </a>
+          </div>     
+          
+        </div>
+          
+          <div class="modal-footer">
+            
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
     <%- contents %>
 
     <footer class="footer">
       <div class="bg-black-2">
         <div class="container">
-          <p class="text-gray-2 text-center py-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
+          <p class="text-gray-2 fs-md-16 text-center py-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
         </div>
       </div>
     </footer>
     <!--modal-->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <div></div>
-            <h5 class="modal-title" id="staticBackdropLabel">登入</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content bg-proGray rounded-0 border border-1 border-white position-relative">
+          <button type="button" class="btn-close btn-close-login" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 justify-content-center pt-10 pt-lg-6 pb-0 pb-lg-2">
+            <h4 class="modal-title fw-bold" id="loginModalLabel">登入</h4>
           </div>
-          <div class="modal-body">
-            
+
+          <div class="modal-body modal-content-width pb-0 pt-6 px-6 p-lg-6">
+            <form>
+              <label for="email" class="form-label text-c-gray">信箱</label>
+              <input type="email" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="email" placeholder="請輸入信箱">
+              <label for="password-login" class="form-label text-c-gray">密碼</label>
+              <input type="password" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="password-login" placeholder="請輸入密碼">
+            </form>
+            <a href="./registration.html" class="btn bg-c-gradient hover-bg-gradient border-0 rounded-2 w-100">登入</a>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+
+          <div class="modal-footer modal-content-width border-0 justify-content-center p-6">
+            <p class="w-100 text-center title-border-deco-modal m-0 mb-4">其他登入方式</p>
+            <a href="./index.html" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_fb.svg" alt="icon_fb" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Facebook 登入</p>
+            </a>
+            <a href="./index.html" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_google.svg" alt="icon_google" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Google 登入</p>
+            </a>
           </div>
+
         </div>
+
       </div>
     </div>
     <script src="./assets/js/vendors.js"></script>

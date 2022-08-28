@@ -1,42 +1,16 @@
 .font-fmaily{
     font-family: 'Azeret Mono','Noto Sans TC';
 }
-.double-line{
-    &::before{
-        content:'';
-        position: absolute;
-        width: 50%;
-        border-bottom: 2px solid #62DB54;
-        bottom: 0;
-        left: 0;
-        
-    }
-    &::after{
-        content:'';
-        position: absolute;
-        width: 50%;
-        border-bottom: 2px solid #09ACF5;
-        bottom: 0;
-        right: 0;
+
+@mixin gradient-x($start-color: $success, $end-color: $warning, $start-percent: null, $end-percent: null) {
+    background-image: linear-gradient(104deg, $start-color $start-percent, $end-color $end-percent);
+  }
+
+.gradient-x{
+    @include gradient-x;
+    &:hover{
+        box-shadow: inset 0 0 6px 4px white; 
     }
 }
 
-.overflow-x{
-    overflow-x: auto;
-    white-space: nowrap;
-}
-.modal-title{
-    margin-bottom: 0;
-    line-height: 1.5;
-}
-@media (min-width:768px){
-    .fs-md-8{
-       font-size: 48px !important;  
-    }
-    .text-md-start{
-       text-align: start !important;
-    }
-    .bg-dark-gray{
-       background-color: #202020;
-    }
-   }
+

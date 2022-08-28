@@ -1,6 +1,137 @@
 
-.text-center{
-    @media (min-width:991px){
-      text-align:start;
+//index
+@media (max-width:991px){
+  .banner{
+    background-image: url(../images/bg_home_mobile.jpg);
+  }
+  .title-left-center{
+    text-align: center !important;
+  }
+  .title-left span:last-child {
+    margin-left: 42.5% !important;
+  }  
+  .p-l-0{
+    padding: 0 !important;
+  }
+  .index-column{
+    flex-direction: column !important;
+  }
+  .mr-md-0{
+    margin-right: 0px !important;
+  }
+  .mb-m-6{
+    margin-bottom: 24px !important;
+  }
+  .mb-l-10{
+    margin-bottom: 40px !important;
+  }
+  .mt-md-0{
+    margin-top: 0 !important;
   }
 }
+@media (max-width:768px){
+  .fs-md-24{
+    font-size: 24px !important;
+  }
+  .fs-md-14{
+    font-size: 14px !important;
+  }
+  .fs-md-16{
+    font-size: 16px !important;
+  }
+  .p-md-banner{
+    padding: 32px 25px !important;
+  }
+  .fs-md-8{
+     font-size: 48px !important;  
+  }
+  .fs-md-7{
+    font-size: 18px !important;
+  }
+  .fs-md-100{
+    font-size: 100px !important;
+  }
+  .title-left span:last-child {
+    margin-left: 45% !important;
+    margin-bottom: 40px !important;
+  }
+  .hover-radius{
+    margin-bottom: 24px !important;
+    background-color: #202020 !important;
+    opacity: 1  !important;
+    h3{
+      font-size: 40px !important;
+      background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+            background-clip: text;
+            color: transparent;
+    }
+  }
+  .py-m-10{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .pt-m-0{
+    padding-top: 0 !important;
+  }
+  .pb-md-14-5{
+    padding-bottom: 50px !important;
+  }
+  .mb-md-12-5{
+    margin-bottom: 50px !important;
+  }
+  .index-study{
+    width: 216px !important;
+    margin: 0 auto !important;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .mb-md-4-5{
+    margin-bottom: 16px !important;
+  }
+  .mt-m-6{
+    margin-top: 24px !important;
+  }
+  .bg-img-1{
+    height: 263px;
+  }
+  .bg-img-2{
+    height: 263px;
+  }
+  .bg-img-3{
+    height: 263px;
+  }
+  .bg-img-4{
+    height: 263px;
+  }
+  .pb-m-10{
+    padding-bottom: 40px !important;
+  }
+  .p-m-6{
+    padding: 24px !important;
+  }
+//all-course
+  .p-m-24{
+    padding: 24px !important;
+  }
+  .flex-md{
+    display: flex;
+  }  
+  .px-m-16{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .mt-m-48{
+    margin-top: 48px !important;
+  }
+  .mr-md-8{
+    margin-right: 8px !important;
+  }
+  .modal-my{
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+  }
+ }
+
+
+
+

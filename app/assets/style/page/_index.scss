@@ -1,18 +1,28 @@
+.lh-29{
+  line-height: 29px;
+}
+.lh-37{
+  line-height: 37px;
+}
+.mb-37{
+  margin-bottom: 37px;
+}
+.left-70{
+  left: 70px;
+}
+.double-color-y{
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  background-clip: text;
+  color: transparent;
+}
 .banner{
   background-image: url(../images/bg_home.jpg);
   background-position:center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 680px;
-  @media (max-width:991px){
-    background-image: url(../images/bg_home_mobile.jpg);
-  }
-  @include media-breakpoint-up(md){
-    h2{
-      font-size: 48px;
-    }
-  }
 }
+
 //捲軸底色
 #style-3::-webkit-scrollbar-track {
   background-color: black;
@@ -116,13 +126,20 @@
     border-bottom: 3px solid;
 }
 
-.title span:last-child {
+.title-left span:last-child {
     display: block;
     width: 50px;
     height: 3px;
     margin-top: 1rem;
-    background-color: $success;
-}    
+    background-color: $success; 
+}
+.title span:last-child {
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 1rem;
+  background-color: $success; 
+}     
 .swiper {
     width: 100%;
     height: 429px;
@@ -159,7 +176,7 @@
       }
       @media (max-width:991px) {
         position: relative;
-        width: calc(100% - 5px);
+        width: calc(100%);
         height: 213px;
         left: 5px;
         margin-bottom: 40px;
@@ -236,4 +253,4 @@
       }
     }
   }
- 
+
