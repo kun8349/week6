@@ -34,7 +34,7 @@
               <a class="nav-link" href="all-course.html">課程介紹</a>
             </li>
             <li class="nav-item me-12">
-              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <a href="" class="nav-link material-symbols-outlined d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <span class="fs-4 me-1">account_circle</span>
                 <span class="fs-6 lh-base">登入</span> 
               </a>
@@ -44,137 +44,163 @@
       </div>
     </nav>
     <!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body container-fluid position-relative pt-4 pb-6">
-        <button type="button" class="btn-close h7 position-absolute" data-bs-dismiss="modal"
-          aria-label="Close"></button>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <p class="modal-title h3 text-center" id="exampleModalLabel">登入</p>
-            <form>
-              <div class="mb-4">
-                <label for="email" class="form-label">信箱</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="請輸入信箱">
-              </div>
-              <div class="mb-4">
-                <label for="password" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
-              </div>
-              <button href="sign-up.html" type="submit" class="btn btn-gradient w-100 mb-6 border-0">登入</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable container-modal">
+        <div class="modal-content bg-primary text-white rounded-0 border border-1 border-white">
+          <button type="button" class="btn-close pr-29" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 p-0 justify-content-center">
+            <h4 class="modal-title fw-bold fs-4 pt-6 mb-8" id="loginModalLabel">登入</h4>
+          </div>
+          <div class="modal-body modal-body-width modal-my mb-12">
+            <form class="d-flex flex-column">
+              <label for="email" class="form-label text-c-gray">信箱</label>
+              <input type="email" class="form-control rounded-1 bg-secondary border border-1 border-white text-white mb-4 mb-lg-6" id="email" placeholder="請輸入信箱">
+              <label for="password-login" class="form-label text-c-gray">密碼</label>
+              <input type="password" class="form-control rounded-1 bg-secondary border border-1 border-white text-white mb-4 mb-lg-6" id="password-login" placeholder="請輸入密碼">
+              <botton type="submit" class="btn border-0 text-white d-block px-12 py-2 fs-7 lh-base gradient-x rounded-1 mb-12">登入</botton>
             </form>
-            <p class="text-center line-deco mb-3">其他登入方式</p>
-            <a href="#" class="btn btn-outline-white w-100 mb-4 position-relative"><img
-                src="assets/images/icon_fb.svg" alt="icon" class="login-icon">Facebook 登入</a>
-            <a href="#" class="btn btn-outline-white w-100 position-relative"><img src="assets/images/icon_google.svg"
-                alt="icon" class="login-icon">Google 登入</a>
-
+              <p class="modal-word text-center fs-6 lh-base mb-4">其他登入方式</p>
+              <a href="#" class="btn btn-outline-white mb-4 position-relative d-block d-flex align-items-center justify-content-between">
+                <img
+                src="assets/images/fb_icon_325x325.png" alt="icon" class="logo-icon">
+                <span>Facebook 登入</span>
+                <span></span>
+              </a>
+              <a href="#" class="btn btn-outline-white position-relative d-block d-block d-flex align-items-center justify-content-between">
+                <img src="assets/images/icon_google.svg"
+                alt="icon" class="logo-icon">
+                <span>Google 登入</span>
+                <span></span>
+              </a>
+          </div>     
+          
+        </div>
+          
+          <div class="modal-footer">
+            
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
     <div class="bg-secondary">
-    <div class="container px-109 pb-22">
-        <div class="pt-42 pb-12">
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">所有課程</button>
-            </a>
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">行動應用開發</button>
-            </a>
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">資料庫/資料科學</button>
-            </a>
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">前端語言</button>
-            </a>
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">後端語言</button>
-            </a>
-            <a href="">
-                <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">作業系統與伺服器</button>
-            </a>
-        </div>
-        <div class="bg-primary rounded-3 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12">
-            <div class="text-center d-flex">
-                <div class="me-12">
-                    <img src="assets/images/teacher01.jpg" alt="" class="img-100 rounded-circle mb-2">
-                    <p class="mb-0">Belinda</p>
+    <div class="container pb-22">
+        <div class="row">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div class="pt-42 pb-12 overflow-x" id="style-3">
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">所有課程</button>
+                    </a>
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">行動應用開發</button>
+                    </a>
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">資料庫/資料科學</button>
+                    </a>
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">前端語言</button>
+                    </a>
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">後端語言</button>
+                    </a>
+                    <a href="">
+                        <button type="button" class="btn btn-outline-white btn-hover-title py-4 px-8 fs-6 lh-base me-4 rounded-1">作業系統與伺服器</button>
+                    </a>
                 </div>
-                <div class="text-start">
-                    <h2 class="mb-1 fs-4 lh-base">基礎前端 - HTML</h2>
-                    <p class="mb-2 text-success">前端語言</p>
-                    <p class="mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言<br>與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                <div class="bg-primary rounded-3 p-m-24 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 index-column">
+                    <div class="text-center d-flex index-column">
+                        <div class="me-12 mr-md-0">
+                            <img src="assets/images/teacher01.jpg" alt="" class="img-100 rounded-circle mb-2">
+                            <p class="mb-0 mb-m-6">Belinda</p>
+                        </div>
+                        <div class="text-start">
+                            <h2 class="mb-1 fs-4 lh-base">基礎前端 - HTML</h2>
+                            <p class="mb-2 text-success">前端語言</p>
+                            <p class="mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言<br>與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-m-48">
+                        <div class="flex-md align-items-center justify-content-center mb-md-4-5">
+                            <p class="mb-1">50分鐘</p>
+                            <span class="font-fmaily fs-2">NT$1600</span>
+                        </div>
+                        <div class="flex-md justify-content-center">
+                            <a href="" class="btn-hover-content px-12 px-m-16 py-2 mt-4 fs-7 lh-base rounded-1 mt-m-0 mr-md-8">課程介紹</a>
+                            <a href="" class="btn border-0 text-white d-block px-12 px-m-16 py-2 mt-2 mt-m-0 fs-7 lh-base gradient-x rounded-1">立即預約</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-3 p-m-24 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 index-column mt-8">
+                    <div class="text-center d-flex index-column">
+                        <div class="me-12 mr-md-0">
+                            <img src="assets/images/teacher04.jpg" alt="" class="img-100 rounded-circle mb-2">
+                            <p class="mb-0 mb-m-6">Lina</p>
+                        </div>
+                        <div class="text-start">
+                            <h2 class="mb-1 fs-4 lh-base">2022 Python 全攻略｜從入門到實務</h2>
+                            <p class="mb-2 text-success">後端語言</p>
+                            <p class="mb-0">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導<br>向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本<br>堂課帶你無痛入門，開發簡單的應用！</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-m-48">
+                        <div class="flex-md align-items-center justify-content-center mb-md-4-5">
+                            <p class="mb-1">50分鐘</p>
+                            <span class="font-fmaily fs-2">NT$1600</span>
+                        </div>
+                        <div class="flex-md justify-content-center">
+                            <a href="" class="btn-hover-content px-12 px-m-16 py-2 mt-4 fs-7 lh-base rounded-1 mt-m-00 mr-md-8">課程介紹</a>
+                            <a href="" class="btn border-0 text-white d-block px-12 px-m-16 py-2 mt-2 mt-m-0 fs-7 lh-base gradient-x rounded-1">立即預約</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-3 p-m-24 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 index-column mt-8">
+                    <div class="text-center d-flex index-column">
+                        <div class="me-12 mr-md-0">
+                            <img src="assets/images/teacher06.jpg" alt="" class="img-100 rounded-circle mb-2">
+                            <p class="mb-0 mb-m-6">Guava</p>
+                        </div>
+                        <div class="text-start">
+                            <h2 class="mb-1 fs-4 lh-base">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h2>
+                            <p class="mb-2 text-success">行動應用開發</p>
+                            <p class="mb-0">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自<br>然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最<br>合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-m-48">
+                        <div class="flex-md align-items-center justify-content-center mb-md-4-5">
+                            <p class="mb-1">50分鐘</p>
+                            <span class="font-fmaily fs-2">NT$1600</span>
+                        </div>
+                        <div class="flex-md justify-content-center">
+                            <a href="" class="btn-hover-content px-12 px-m-16 py-2 mt-4 fs-7 lh-base rounded-1 mt-m-0 mr-md-8">課程介紹</a>
+                            <a href="" class="btn border-0 text-white d-block px-12 px-m-16 py-2 mt-2 mt-m-0 fs-7 lh-base gradient-x rounded-1">立即預約</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-3 p-m-24 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 index-column mt-8">
+                    <div class="text-center d-flex index-column">
+                        <div class="me-12 mr-md-0">
+                            <img src="assets/images/teacher03.jpg" alt="" class="img-100 rounded-circle mb-2">
+                            <p class="mb-0 mb-m-6">Joe</p>
+                        </div>
+                        <div class="text-start">
+                            <h2 class="mb-1 fs-4 lh-base">Linux 零基礎七天入門｜入門到實務</h2>
+                            <p class="mb-2 text-success">作業系統與伺服器</p>
+                            <p class="mb-0">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者<br>圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式<br>語言的基本語法</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-m-48">
+                        <div class="flex-md align-items-center justify-content-center mb-md-4-5">
+                            <p class="mb-1">50分鐘</p>
+                            <span class="font-fmaily fs-2">NT$1600</span>
+                        </div>
+                        <div class="flex-md justify-content-center">
+                            <a href="" class="btn-hover-content px-12 px-m-16 py-2 mt-4 fs-7 lh-base rounded-1 mt-m-0 mr-md-8">課程介紹</a>
+                            <a href="" class="btn border-0 text-white d-block px-12 px-m-16 py-2 mt-2 mt-m-0 fs-7 lh-base gradient-x rounded-1">立即預約</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="text-center">
-                <p class="mb-1">50分鐘</p>
-                <span class="font-fmaily fs-2">NT$1600</span>
-                <a href="" class="btn-hover-content px-12 py-2 mt-4 fs-7 lh-base rounded-1">課程介紹</a>
-                <a href="" class="btn border-0 text-white px-12 py-2 mt-2 fs-7 lh-base gradient-x rounded-1">立即預約</a>
-            </div>
-        </div>
-        <div class="bg-primary rounded-3 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 mt-8">
-            <div class="text-center d-flex">
-                <div class="me-12">
-                    <img src="assets/images/teacher04.jpg" alt="" class="img-100 rounded-circle mb-2">
-                    <p class="mb-0">Lina</p>
-                </div>
-                <div class="text-start">
-                    <h2 class="mb-1 fs-4 lh-base">2022 Python 全攻略｜從入門到實務</h2>
-                    <p class="mb-2 text-success">後端語言</p>
-                    <p class="mb-0">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導<br>向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本<br>堂課帶你無痛入門，開發簡單的應用！</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <p class="mb-1">50分鐘</p>
-                <span class="font-fmaily fs-2">NT$2000</span>
-                <a href="" class="btn-hover-content px-12 py-2 mt-4 fs-7 lh-base rounded-1">課程介紹</a>
-                <a href="" class="btn border-0 text-white px-12 py-2 mt-2 fs-7 lh-base gradient-x rounded-1">立即預約</a>
-            </div>
-        </div>
-        <div class="bg-primary rounded-3 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 mt-8">
-            <div class="text-center d-flex">
-                <div class="me-12">
-                    <img src="assets/images/teacher06.jpg" alt="" class="img-100 rounded-circle mb-2">
-                    <p class="mb-0">Guava</p>
-                </div>
-                <div class="text-start">
-                    <h2 class="mb-1 fs-4 lh-base">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h2>
-                    <p class="mb-2 text-success">行動應用開發</p>
-                    <p class="mb-0">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自<br>然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最<br>合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <p class="mb-1">50分鐘</p>
-                <span class="font-fmaily fs-2">NT$1800</span>
-                <a href="" class="btn-hover-content px-12 py-2 mt-4 fs-7 lh-base rounded-1">課程介紹</a>
-                <a href="" class="btn border-0 text-white px-12 py-2 mt-2 fs-7 lh-base gradient-x rounded-1">立即預約</a>
-            </div>
-        </div>
-        <div class="bg-primary rounded-3 text-white lh-base fs-6 d-flex justify-content-between align-self-baseline p-12 mt-8">
-            <div class="text-center d-flex">
-                <div class="me-12">
-                    <img src="assets/images/teacher03.jpg" alt="" class="img-100 rounded-circle mb-2">
-                    <p class="mb-0">Joe</p>
-                </div>
-                <div class="text-start">
-                    <h2 class="mb-1 fs-4 lh-base">Linux 零基礎七天入門｜入門到實務</h2>
-                    <p class="mb-2 text-success">作業系統與伺服器</p>
-                    <p class="mb-0">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者<br>圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式<br>語言的基本語法</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <p class="mb-1">50分鐘</p>
-                <span class="font-fmaily fs-2">NT$1800</span>
-                <a href="" class="btn-hover-content px-12 py-2 mt-4 fs-7 lh-base rounded-1">課程介紹</a>
-                <a href="" class="btn border-0 text-white px-12 py-2 mt-2 fs-7 lh-base gradient-x rounded-1">立即預約</a>
-            </div>
-        </div>
+        </div>  
     </div>
 </div>
 
@@ -184,27 +210,44 @@
     <footer class="footer">
       <div class="bg-black-2">
         <div class="container">
-          <p class="text-gray-2 text-center py-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
+          <p class="text-gray-2 fs-md-16 text-center py-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
         </div>
       </div>
     </footer>
     <!--modal-->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <div></div>
-            <h5 class="modal-title" id="staticBackdropLabel">登入</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content bg-proGray rounded-0 border border-1 border-white position-relative">
+          <button type="button" class="btn-close btn-close-login" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 justify-content-center pt-10 pt-lg-6 pb-0 pb-lg-2">
+            <h4 class="modal-title fw-bold" id="loginModalLabel">登入</h4>
           </div>
-          <div class="modal-body">
-            
+
+          <div class="modal-body modal-content-width pb-0 pt-6 px-6 p-lg-6">
+            <form>
+              <label for="email" class="form-label text-c-gray">信箱</label>
+              <input type="email" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="email" placeholder="請輸入信箱">
+              <label for="password-login" class="form-label text-c-gray">密碼</label>
+              <input type="password" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="password-login" placeholder="請輸入密碼">
+            </form>
+            <a href="./registration.html" class="btn bg-c-gradient hover-bg-gradient border-0 rounded-2 w-100">登入</a>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+
+          <div class="modal-footer modal-content-width border-0 justify-content-center p-6">
+            <p class="w-100 text-center title-border-deco-modal m-0 mb-4">其他登入方式</p>
+            <a href="./index.html" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_fb.svg" alt="icon_fb" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Facebook 登入</p>
+            </a>
+            <a href="./index.html" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_google.svg" alt="icon_google" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Google 登入</p>
+            </a>
           </div>
+
         </div>
+
       </div>
     </div>
     <script src="./assets/js/vendors.js"></script>
